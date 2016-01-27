@@ -12,6 +12,7 @@ import Foundation
 
 class NotificationController: WKUserNotificationInterfaceController {
 
+  @IBOutlet var dynamicLabel: WKInterfaceLabel!
     override init() {
         // Initialize variables here.
         super.init()
@@ -28,6 +29,12 @@ class NotificationController: WKUserNotificationInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+  
+  override func didReceiveRemoteNotification(remoteNotification: [NSObject : AnyObject], withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
+  let mount=1.2 //此值根据你的应用计算生成
+  dynamicLabel.setText("Today you should drink \(mount)L water more.")
+  completionHandler(.Custom)
+  }
 
     /*
     override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {

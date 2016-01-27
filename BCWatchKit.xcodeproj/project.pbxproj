@@ -24,6 +24,7 @@
 		D33E43391C5870CF00CB10EC /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E43381C5870CF00CB10EC /* GlanceController.swift */; };
 		D33E433B1C5870CF00CB10EC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E433A1C5870CF00CB10EC /* ComplicationController.swift */; };
 		D33E433D1C5870CF00CB10EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33E433C1C5870CF00CB10EC /* Assets.xcassets */; };
+		D33E43641C58AF7B00CB10EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33E43241C5870CF00CB10EC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -412,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33E43641C58AF7B00CB10EC /* Assets.xcassets in Resources */,
 				D33E433D1C5870CF00CB10EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
