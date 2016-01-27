@@ -29,10 +29,28 @@
             <objects>
                 <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="BCWatchKit_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" layout="vertical" id="t8f-Gd-c4y">
+                            <items>
+                                <dateLabel width="135" alignment="left" id="H6k-82-qeV">
+                                    <dateFormatterStyle key="dateStyle" short="YES"/>
+                                    <dateFormatterStyle key="timeStyle" short="YES"/>
+                                </dateLabel>
+                                <label alignment="left" text="Beijing" id="neL-Fa-PUW"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <map height="100" alignment="left" id="8Hw-zQ-nI7"/>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="date" destination="H6k-82-qeV" id="5tb-dE-apD"/>
+                        <outlet property="map" destination="8Hw-zQ-nI7" id="WiR-FI-pfY"/>
+                        <outlet property="titleLabel" destination="neL-Fa-PUW" id="eXu-tL-DFA"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>

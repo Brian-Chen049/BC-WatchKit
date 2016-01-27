@@ -11,10 +11,16 @@ import Foundation
 
 
 class GlanceController: WKInterfaceController {
+  
+  @IBOutlet var date: WKInterfaceDate!
+  @IBOutlet var titleLabel: WKInterfaceLabel!
+  
+  @IBOutlet var map: WKInterfaceMap!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+      titleLabel.setText("BEIJING")
+      map.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(30.541093, 114.360734), span: MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)))
         // Configure interface objects here.
     }
 
