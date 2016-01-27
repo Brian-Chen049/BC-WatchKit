@@ -147,10 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				D33E42F61C5870CF00CB10EC /* BCWatchKit */,
-				D33E430B1C5870CF00CB10EC /* BCWatchKitTests */,
-				D33E43161C5870CF00CB10EC /* BCWatchKitUITests */,
 				D33E43201C5870CF00CB10EC /* BCWatchKit WatchKit App */,
 				D33E432F1C5870CF00CB10EC /* BCWatchKit WatchKit Extension */,
+				D33E430B1C5870CF00CB10EC /* BCWatchKitTests */,
+				D33E43161C5870CF00CB10EC /* BCWatchKitUITests */,
 				D33E42F51C5870CF00CB10EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -743,6 +743,7 @@
 				D33E43431C5870CF00CB10EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D33E43451C5870CF00CB10EC /* Build configuration list for PBXNativeTarget "BCWatchKit WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -751,6 +752,7 @@
 				D33E43471C5870CF00CB10EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D33E43491C5870CF00CB10EC /* Build configuration list for PBXNativeTarget "BCWatchKit" */ = {
 			isa = XCConfigurationList;
@@ -759,6 +761,7 @@
 				D33E434B1C5870CF00CB10EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D33E434C1C5870CF00CB10EC /* Build configuration list for PBXNativeTarget "BCWatchKitTests" */ = {
 			isa = XCConfigurationList;
@@ -767,6 +770,7 @@
 				D33E434E1C5870CF00CB10EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D33E434F1C5870CF00CB10EC /* Build configuration list for PBXNativeTarget "BCWatchKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +779,7 @@
 				D33E43511C5870CF00CB10EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
