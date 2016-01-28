@@ -25,6 +25,8 @@
 		D33E433B1C5870CF00CB10EC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E433A1C5870CF00CB10EC /* ComplicationController.swift */; };
 		D33E433D1C5870CF00CB10EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33E433C1C5870CF00CB10EC /* Assets.xcassets */; };
 		D33E43641C58AF7B00CB10EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33E43241C5870CF00CB10EC /* Assets.xcassets */; };
+		D39170841C59C105003A22AB /* WatchConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39170831C59C105003A22AB /* WatchConnection.swift */; };
+		D39170851C59C10E003A22AB /* WatchConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39170831C59C105003A22AB /* WatchConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,7 @@
 		D33E433A1C5870CF00CB10EC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		D33E433C1C5870CF00CB10EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33E433E1C5870CF00CB10EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39170831C59C105003A22AB /* WatchConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WatchConnection.swift; path = ../../../Desktop/WatchConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 		D33E42EB1C5870CF00CB10EC = {
 			isa = PBXGroup;
 			children = (
+				D39170831C59C105003A22AB /* WatchConnection.swift */,
 				D33E42F61C5870CF00CB10EC /* BCWatchKit */,
 				D33E43201C5870CF00CB10EC /* BCWatchKit WatchKit App */,
 				D33E432F1C5870CF00CB10EC /* BCWatchKit WatchKit Extension */,
@@ -426,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33E42FA1C5870CF00CB10EC /* ViewController.swift in Sources */,
+				D39170841C59C105003A22AB /* WatchConnection.swift in Sources */,
 				D33E42F81C5870CF00CB10EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33E43371C5870CF00CB10EC /* NotificationController.swift in Sources */,
+				D39170851C59C10E003A22AB /* WatchConnection.swift in Sources */,
 				D33E43351C5870CF00CB10EC /* ExtensionDelegate.swift in Sources */,
 				D33E433B1C5870CF00CB10EC /* ComplicationController.swift in Sources */,
 				D33E43331C5870CF00CB10EC /* InterfaceController.swift in Sources */,
