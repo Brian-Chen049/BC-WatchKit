@@ -27,6 +27,8 @@
 		D33E43641C58AF7B00CB10EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33E43241C5870CF00CB10EC /* Assets.xcassets */; };
 		D39170841C59C105003A22AB /* WatchConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39170831C59C105003A22AB /* WatchConnection.swift */; };
 		D39170851C59C10E003A22AB /* WatchConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39170831C59C105003A22AB /* WatchConnection.swift */; };
+		D39170881C59C1F2003A22AB /* ItemCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39170871C59C1F2003A22AB /* ItemCellController.swift */; };
+		D391708C1C59C36D003A22AB /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391708B1C59C36D003A22AB /* ItemsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,9 @@
 		D33E433C1C5870CF00CB10EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33E433E1C5870CF00CB10EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39170831C59C105003A22AB /* WatchConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WatchConnection.swift; path = ../../../Desktop/WatchConnection.swift; sourceTree = "<group>"; };
+		D39170861C59C1F1003A22AB /* BCWatchKit WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BCWatchKit WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		D39170871C59C1F2003A22AB /* ItemCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellController.swift; sourceTree = "<group>"; };
+		D391708B1C59C36D003A22AB /* ItemsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +155,7 @@
 		D33E42EB1C5870CF00CB10EC = {
 			isa = PBXGroup;
 			children = (
+				D391708B1C59C36D003A22AB /* ItemsViewModel.swift */,
 				D39170831C59C105003A22AB /* WatchConnection.swift */,
 				D33E42F61C5870CF00CB10EC /* BCWatchKit */,
 				D33E43201C5870CF00CB10EC /* BCWatchKit WatchKit App */,
@@ -224,6 +230,8 @@
 				D33E433C1C5870CF00CB10EC /* Assets.xcassets */,
 				D33E433E1C5870CF00CB10EC /* Info.plist */,
 				D33E43301C5870CF00CB10EC /* Supporting Files */,
+				D39170871C59C1F2003A22AB /* ItemCellController.swift */,
+				D39170861C59C1F1003A22AB /* BCWatchKit WatchKit App-Bridging-Header.h */,
 			);
 			path = "BCWatchKit WatchKit Extension";
 			sourceTree = "<group>";
@@ -455,10 +463,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39170881C59C1F2003A22AB /* ItemCellController.swift in Sources */,
 				D33E43371C5870CF00CB10EC /* NotificationController.swift in Sources */,
 				D39170851C59C10E003A22AB /* WatchConnection.swift in Sources */,
 				D33E43351C5870CF00CB10EC /* ExtensionDelegate.swift in Sources */,
 				D33E433B1C5870CF00CB10EC /* ComplicationController.swift in Sources */,
+				D391708C1C59C36D003A22AB /* ItemsViewModel.swift in Sources */,
 				D33E43331C5870CF00CB10EC /* InterfaceController.swift in Sources */,
 				D33E43391C5870CF00CB10EC /* GlanceController.swift in Sources */,
 			);
@@ -634,13 +644,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = BCWatchKit_WatchKit_Extension;
 				INFOPLIST_FILE = "BCWatchKit WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Brian-Chen.BCWatchKit.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BCWatchKit WatchKit Extension/BCWatchKit WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -650,13 +664,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = BCWatchKit_WatchKit_Extension;
 				INFOPLIST_FILE = "BCWatchKit WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Brian-Chen.BCWatchKit.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BCWatchKit WatchKit Extension/BCWatchKit WatchKit App-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};

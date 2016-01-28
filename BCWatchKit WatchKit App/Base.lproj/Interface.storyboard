@@ -12,14 +12,28 @@
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="y4u-rM-k8h">
                             <items>
-                                <imageView width="80" alignment="center" image="icon1" id="KEH-NR-nUe"/>
-                                <imageView width="80" alignment="center" image="icon2" id="H8g-Kz-Hfj"/>
-                                <imageView width="80" alignment="center" image="icon3" id="bEg-MB-Z1k"/>
+                                <table alignment="left" id="DHA-cJ-Rhg">
+                                    <items>
+                                        <tableRow identifier="ItemCell" id="Dvc-Z4-UUl" userLabel="Item Cell" customClass="ItemCellController" customModule="BCWatchKit_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="28e-rr-VOd">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Label" textAlignment="left" baselineAdjustment="alignCenters" id="egL-Fx-Ve5"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="label" destination="egL-Fx-Ve5" id="Iqe-7O-WJZ"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
                             </items>
                         </group>
                     </items>
                     <color key="backgroundColor" red="0.2901960784" green="0.88904787764242432" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                     <edgeInsets key="margins" left="10" right="10" top="10" bottom="10"/>
+                    <connections>
+                        <outlet property="table" destination="DHA-cJ-Rhg" id="ape-0r-rDL"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
