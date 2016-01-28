@@ -29,6 +29,7 @@
 		D39170851C59C10E003A22AB /* WatchConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39170831C59C105003A22AB /* WatchConnection.swift */; };
 		D39170881C59C1F2003A22AB /* ItemCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39170871C59C1F2003A22AB /* ItemCellController.swift */; };
 		D391708C1C59C36D003A22AB /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391708B1C59C36D003A22AB /* ItemsViewModel.swift */; };
+		D391708D1C59C759003A22AB /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391708B1C59C36D003A22AB /* ItemsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -438,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33E42FA1C5870CF00CB10EC /* ViewController.swift in Sources */,
+				D391708D1C59C759003A22AB /* ItemsViewModel.swift in Sources */,
 				D39170841C59C105003A22AB /* WatchConnection.swift in Sources */,
 				D33E42F81C5870CF00CB10EC /* AppDelegate.swift in Sources */,
 			);

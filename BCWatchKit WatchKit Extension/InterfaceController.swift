@@ -13,6 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
   @IBOutlet var table: WKInterfaceTable!
+  var viewModel = ItemsViewModel()
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
       
@@ -31,8 +32,8 @@ class InterfaceController: WKInterfaceController {
   }
   
   func loadTableData() {
-    table.setNumberOfRows(2, withRowType: "ItemCell")
-    for (index, item) in ["A", "B"].enumerate() {
+    table.setNumberOfRows(viewModel.items.count, withRowType: "ItemCell")
+    for (index, item) in viewModel.items.enumerate() {
       let controller = table.rowControllerAtIndex(index) as! ItemCellController
       controller.label.setText(item)
     }
